@@ -213,6 +213,18 @@ img {
   background: #000;
 }
 
+/* Schwarzer Balken am unteren Rand: verdeckt YouTube-Untertitel wie „[Musik]“.
+   YouTube setzt Untertitel an den unteren Rand des Players (nicht des Videobilds),
+   deshalb sitzt der Balken fest unten. Der Titel der Geschichte liegt darin. */
+.player__caption-cover {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: calc(max(110px, 15vh) + var(--safe-bottom));
+  background: #000;
+}
+
 .player__fallback {
   position: absolute;
   inset: 0;
@@ -323,12 +335,13 @@ img {
 .player__title {
   position: absolute;
   left: 50%;
-  bottom: calc(var(--safe-bottom) + 20px);
+  /* im Abdeck-Balken */
+  bottom: calc(var(--safe-bottom) + 28px);
   transform: translateX(-50%);
   margin: 0;
   padding: 10px 22px;
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(255, 255, 255, 0.12);
   color: #fff;
   font-size: 22px;
   font-weight: 800;

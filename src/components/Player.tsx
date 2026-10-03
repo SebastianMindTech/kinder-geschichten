@@ -103,6 +103,8 @@ export function Player({ story, onBack }: Props) {
         <div ref={mountRef} className="player__mount" />
         {/* Schutzschicht: fängt jede Berührung ab, damit das Kind YouTube nicht öffnen kann */}
         <div className="player__shield" onClick={showBigButton ? togglePlay : undefined} aria-hidden="true" />
+        {/* Deckt die YouTube-Untertitelzeile am unteren Rand des Videobilds ab (CLAUDE.md §2) */}
+        <div className="player__caption-cover" aria-hidden="true" />
         {(status === 'loading' || status === 'ready') && (
           <img className="player__poster" src={thumbnailUrl(story.youtubeId)} alt="" draggable={false} />
         )}
