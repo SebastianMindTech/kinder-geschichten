@@ -1,0 +1,26 @@
+# Abhängigkeiten und Build-Ausgabe — werden aus package-lock.json bzw. vom Build erzeugt
+node_modules/
+dist/
+dist-ssr/
+
+# Vercel-Projektverknüpfung (enthält Projekt-/Org-IDs, gehört nicht ins Repo)
+.vercel/
+
+# Keine Secrets im Repo — die App braucht keine, falls doch: nur aus Umgebungsvariablen (CLAUDE.md §4)
+.env
+.env.*
+*.key
+*.pem
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Editor- und System-Dateien
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+.~lock.*
+*.local
