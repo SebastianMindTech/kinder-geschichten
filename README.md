@@ -2,7 +2,9 @@
 
 **Kinderfreundliche Web-App (PWA) für Dreijährige: fünf Hörgeschichten als große Kacheln, antippen, zuhören, zurück. Mehr nicht.**
 
-**Owner:** Sebastian Rosensteiner · **Stand:** 03.10.2026 · **Status:** in Aufbau
+**Owner:** Sebastian Rosensteiner · **Stand:** 03.10.2026 · **Status:** produktiv
+
+**Live:** https://kinder-geschichten.vercel.app (Vercel, deployt automatisch bei Push auf `main`)
 
 > Die App zeigt nur die Geschichten, die in `src/stories.ts` stehen. Das Kind kann nichts hinzufügen, nichts suchen und YouTube nicht öffnen.
 > Es gibt keine Anmeldung, keine Einstellungen, keine Tracker.
@@ -52,7 +54,7 @@ Aktuell enthalten (die fünf meistgesehenen sigikid-Hörgeschichten, Stand 03.10
 
 ## Deployment (Vercel)
 
-Einmalig: auf [vercel.com](https://vercel.com) mit GitHub anmelden → „Add New… → Project“ → dieses Repo importieren → Preset „Vite“ wird erkannt → „Deploy“. Keine Umgebungsvariablen nötig. Danach deployt jeder Push auf `main` automatisch.
+Eingerichtet am 03.10.2026: Vercel-Projekt `kinder-geschichten` (Team „Sebastian“, Hobby-Plan), verbunden mit diesem Repo über die Vercel-GitHub-App (Zugriff nur auf dieses Repo). Preset „Vite“, keine Umgebungsvariablen. Jeder Push auf `main` deployt automatisch auf https://kinder-geschichten.vercel.app, andere Branches bekommen Preview-URLs.
 
 ## Installation auf dem iPad
 
